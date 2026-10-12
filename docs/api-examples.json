@@ -1,0 +1,22 @@
+
+{
+  "createAppointmentRequest": {
+    "patientId": 125,
+    "doctorId": 42,
+    "appointmentDate": "2026-10-20",
+    "appointmentTime": "10:30"
+  },
+  "successResponse": {
+    "appointmentId": 9001,
+    "patientId": 125,
+    "doctorId": 42,
+    "appointmentDate": "2026-10-20",
+    "appointmentTime": "10:30",
+    "status": "CONFIRMED"
+  },
+  "errorResponse": {
+    "statusCode": 409,
+    "errorCode": "APPOINTMENT_SLOT_UNAVAILABLE",
+    "message": "The selected appointment slot is not available."
+  }
+}
